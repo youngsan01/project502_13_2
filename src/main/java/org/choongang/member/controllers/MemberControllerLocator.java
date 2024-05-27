@@ -1,10 +1,8 @@
-package org.choongang.main.controllers;
+package org.choongang.member.controllers;
 
 import org.choongang.global.Controller;
 import org.choongang.global.ControllerLocator;
 import org.choongang.global.constants.Menu;
-import org.choongang.member.controllers.JoinController;
-import org.choongang.member.controllers.LoginController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -42,7 +40,7 @@ public class MemberControllerLocator implements ControllerLocator {
         }
         controllers.put(menu, controller);
 
-        return null;
+        return controller;
     }
 
 
