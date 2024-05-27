@@ -76,7 +76,7 @@ public abstract class AbstractController implements Controller {
      * @param predicate : 판별식
      * @return
      */
-    private String promptWithValidation(String message, Predicate<String> predicate) {
+    protected String promptWithValidation(String message, Predicate<String> predicate) {
         String str = null;
         do {
             System.out.println(message);
